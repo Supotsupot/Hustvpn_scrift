@@ -541,7 +541,7 @@ Query="SELECT user_name FROM users WHERE user_name='$username' AND auth_vpn=md5(
 user_name=`mysql -u $USER -p$PASS -D $DB -h $HOST -sN -e "$Query"`
 [ "$user_name" != '' ] && [ "$user_name" = "$username" ] && echo "user : $username" && echo 'authentication ok.' && exit 0 || echo 'authentication failed.'; exit 1
 EOM
-wget -O /usr/local/sbin/ssh.php https://raw.githubusercontent.com/Supotsupot/ssh_yutaxscript/main/vip.sh
+wget -O /usr/local/sbin/ssh.php https://raw.githubusercontent.com/Supotsupot/Hustvpn_scrift/main/vip.sh
 }
 
 privatecategory () {
@@ -552,7 +552,7 @@ Query="SELECT user_name FROM users WHERE user_name='$username' AND auth_vpn=md5(
 user_name=`mysql -u $USER -p$PASS -D $DB -h $HOST -sN -e "$Query"`
 [ "$user_name" != '' ] && [ "$user_name" = "$username" ] && echo "user : $username" && echo 'authentication ok.' && exit 0 || echo 'authentication failed.'; exit 1
 EOM
-wget -O /usr/local/sbin/ssh.php https://raw.githubusercontent.com/Supotsupot/ssh_yutaxscript/main/private.sh
+wget -O /usr/local/sbin/ssh.php https://github.com/Supotsupot/Hustvpn_scrift/blob/main/private.sh
 }
 
 
